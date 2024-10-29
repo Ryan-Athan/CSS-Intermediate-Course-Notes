@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" type="text/css">
+
+    <title>Bottom Effect</title>
+
+    <style type="text/css">          
+       
+       body{
+        font-family: serif;
+        height: 100vh;
+        background-color: #000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       }
+
+      .btn{
+        width: 480px;
+        height: 100px;
+        background:steelblue;
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+
+      }
+
+
+      .btn:hover{
+        color: #000;
+      }
+      .btn:hover{
+        background-image: linear-gradient(
+            140deg,
+            transparent,
+            #f4f4f4,
+            transparent,
+            #f4f4f4,
+            transparent,
+            #f4f4f4,
+            transparent,
+            #f4f4f4,
+            transparent,
+            #f4f4f4,
+            transparent,
+            #f4f4f4, 
+            );
+        background-size: 30%;
+
+        animation: myani 5s linear infinite;
+      }
+
+
+      @keyframes myani{
+        from{
+            background-position: 0 0;
+        }
+        top{
+            background-position: 400px 0;
+        }
+      }
+
+     
+      
+    </style>
+</head>
+
+<body>
+  
+    <a href="#" type="button" class="btn">Hover Me 
+    </a>
+
+</body>
+</html>
+
+
+

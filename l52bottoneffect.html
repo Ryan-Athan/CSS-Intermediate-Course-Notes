@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" type="text/css">
+
+    <title>Bottom Effect</title>
+
+    <style type="text/css">          
+       
+       body{
+        font-family: serif;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+       }
+
+      .btn{
+        background: linear-gradient(200deg,skyblue,pink);
+        font-size: 40px;
+        border: none;
+        border-radius: 40px;
+        cursor: pointer;
+
+        padding: 20px;
+
+        position: relative;
+      }
+
+      .btn::after{
+        content: "10% OFF";
+
+        background-color: orange;
+        font-size: 16px;
+        border-radius: 25px;
+        padding: 5px;
+
+        position: absolute;
+        right: 10px;
+        top: -10px;
+
+        transition: all .5s;
+      }
+
+      .btn:hover::after{
+        background-color: red;
+        color: #fff;
+
+      }
+      
+    </style>
+</head>
+
+<body>
+  
+    <button type="button" class=" btn">Add to CARD</button>
+
+</body>
+</html>
+
+<!-- 24BT -->
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" type="text/css">
+
+    <title>Background Effect</title>
+
+    <style type="text/css">          
+       
+       body{
+            font-family: serif;
+            height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0;
+            margin: 0;
+
+       }
+
+       .container{
+            width: 500%;
+            height: 100%;
+            background-color: gray;
+            border-radius: 10px;
+
+            position: relative;
+
+            overflow: hidden;
+       }
+   
+
+       .container div{
+            height: 100%;
+            width: 100%;
+            background-color: #000;
+
+            white-space: nowarp;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+       }
+
+       .container div:nth-of-type(2){
+            width: 50%;
+            background-color: steelblue;
+       }
+
+       .container div h1{
+            color: #fff;
+            line-height: 50px;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            animation-name: myani;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+       }
+
+       .container div:nth-of-type(2) h1{
+            /* vendor prefix  */
+            /* -webkti- for chrome , -moz-for firefox */
+            -webkit-text-stroke: 1px;
+            -webkit-text-stroke-color: #fff;
+            color: transparent;
+       }
+
+        @keyframes myani{
+            from{
+              transform: translate(100%);
+            }
+            top{
+                transform: translate(-100%);
+            }
+        }
+     
+      
+    </style>
+</head>
+
+<body>
+  
+    <div class="container">
+
+        <div>
+            <h1>Weclcome to CSS Intermediate Class</h1>
+        </div>
+
+        <div>
+            <h1>Weclcome to CSS Intermediate Class</h1>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<!-- 1HT -->
+
